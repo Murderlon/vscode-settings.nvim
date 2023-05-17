@@ -1,0 +1,47 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "deno.enable": false,
+  "deno.import_intellisense_origins": {
+    "https://deno.land": true
+  },
+  "search.exclude": {
+    "**/.terraform": true,
+    "**/package-lock.json": true,
+    "**/yarn-error.log": true,
+    "**/node_modules": true,
+    "**/yarn.lock": true,
+    "**/*.pem": true,
+    "foo/some-specifc-file.json": true,
+    "{a,b}/baz.txt": true,
+    "{a,b}/{c,d}/**/*.{js,ts}": true,
+    "e/f/file-prefix-*.csv": true,
+    "d/{foldera,folderb}": true,
+    "a/b/b/d": true
+  },
+  "shellcheck.exclude": ["SC1091", "SC2001", "SC2153"],
+  // Some comment
+  "shellcheck.logLevel": "warn",
+  "yaml.format.printWidth": 100,
+  "[javascript][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
